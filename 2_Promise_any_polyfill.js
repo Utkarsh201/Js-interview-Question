@@ -42,3 +42,4 @@ const pFast = new Promise((resolve) => setTimeout(resolve, 100, "Done quick"));
 Promise.myAny([pErr, pSlow, pFast]).then((value) => {
   console.log(value); // "Done quick"
 });
+

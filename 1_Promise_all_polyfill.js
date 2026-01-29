@@ -45,3 +45,4 @@ const p3 = new Promise((resolve) => setTimeout(resolve, 100, "foo"));
 Promise.myAll([p1, p2, p3]).then((values) => {
   console.log(values); // [1, 2, "foo"]
 });
+
